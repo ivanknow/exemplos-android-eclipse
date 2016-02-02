@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:text="Nome:" android:id="@+id/labelNome" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:layout_height="wrap_content" android:id="@+cadastro/editTextNome" android:layout_width="match_parent" android:text=""></EditText>
+    <TextView android:text="Profissão" android:id="@+id/labelProfissao" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:layout_height="wrap_content" android:id="@+cadastro/editTextProf" android:layout_width="match_parent" android:text=""></EditText>
+    <TextView android:text="Idade" android:id="@+id/labelIdade" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:layout_height="wrap_content" android:id="@+cadastro/editTextIdade" android:layout_width="match_parent" android:text=""></EditText>
+    <Button android:layout_height="wrap_content" android:id="@+cadastro/btnSalvar" android:layout_width="match_parent" android:text="Salvar"></Button>
+    <Button android:layout_height="wrap_content" android:id="@+cadastro/btnCancelar" android:layout_width="match_parent" android:text="Cancelar"></Button>
+
+</LinearLayout>

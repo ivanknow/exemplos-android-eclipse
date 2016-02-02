@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/3/trunk/android/codigo/src/br/ufrpe/mobile/provamovel/modelo
+END
+Questao.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/3/trunk/android/codigo/src/br/ufrpe/mobile/provamovel/modelo/Questao.java
+END
+TipoQuestao.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3/trunk/android/codigo/src/br/ufrpe/mobile/provamovel/modelo/TipoQuestao.java
+END
+QuestaoAberta.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/3/trunk/android/codigo/src/br/ufrpe/mobile/provamovel/modelo/QuestaoAberta.java
+END
+QuestaoFechada.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/3/trunk/android/codigo/src/br/ufrpe/mobile/provamovel/modelo/QuestaoFechada.java
+END
+Alternativa.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3/trunk/android/codigo/src/br/ufrpe/mobile/provamovel/modelo/Alternativa.java
+END
+Prova.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/3/trunk/android/codigo/src/br/ufrpe/mobile/provamovel/modelo/Prova.java
+END

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:text="Comentario..." android:id="@+coment/tvComent" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="Autor..." android:id="@+coment/tvAutor" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:gravity="center">
+        <Button android:text="Anterior" android:id="@+coment/btnAnt" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        <Button android:text="Próximo" android:id="@+coment/btnProx" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+    <Button android:id="@+coment/Voltar" android:text="Voltar" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
+    <Button android:id="@+coment/Comentar" android:text="Comentar" android:layout_width="match_parent" android:layout_height="wrap_content"></Button>
+</LinearLayout>

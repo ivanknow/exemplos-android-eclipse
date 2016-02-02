@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/hello" />
+	<Button android:layout_height="wrap_content" android:id="@+id/button1" android:text="Trocar para Galeria 2" android:layout_width="wrap_content"></Button>
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_height="wrap_content" android:layout_width="match_parent">
+		<Gallery android:id="@+id/gallery1" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Gallery>
+	</LinearLayout>
+	<TextView android:layout_height="wrap_content" android:id="@+id/textView1"
+		android:text="Galeria 2" android:layout_width="wrap_content"></TextView>
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_height="wrap_content" android:layout_width="match_parent">
+		<Gallery android:id="@+id/gallery2" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Gallery>
+	</LinearLayout>
+	<Button android:text="Trocar para Galeria 1" android:id="@+id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+</LinearLayout>

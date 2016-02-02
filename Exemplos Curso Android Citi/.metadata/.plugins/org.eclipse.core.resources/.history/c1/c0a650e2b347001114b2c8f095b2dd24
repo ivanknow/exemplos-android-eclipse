@@ -1,0 +1,109 @@
+package br.com.ivan;
+
+import android.app.Activity;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class CadastroComBanco extends Activity {
+	
+	SQLiteDatabase banco;
+	Button btnTelaCadastro,btnTelaListar,
+	btnCadastroSalvar,btnCadastroCancelar,
+	btnListarCancelar;
+	
+	TextView numRegistros;
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+       
+       
+        try{
+        banco = getApplicationContext().openOrCreateDatabase("bancoCadastro",MODE_PRIVATE,null);
+        banco.execSQL("DROP TABLE tb_pessoa2");
+        banco.execSQL("CREATE TABLE tb_pessoa2 (id INTEGER NOT NULL, nome CHAR(255),profissao VARCHAR(255),idade NUMERIC NOT NULL,PRIMARY KEY (id)) ");
+	        carregaTelaPrincipal();
+        }catch (Exception e){
+        	e.printStackTrace();
+        }
+    }
+    
+    
+    //INICIO
+    public void carregaTelaPrincipal(){
+    	setContentView(R.layout.main);
+    	
+    	btnTelaCadastro = (Button) findViewById(R.main.abrirTelaCadastro);
+    	btnTelaListar = (Button) findViewById(R.main.abrirTelaListar);
+    	
+    	
+    	
+    	btnTelaCadastro.setOnClickListener(new OnClickListener() {
+			
+				public void onClick(View v) {
+				
+					carregaTelaCadastro();
+				}
+        });
+    	
+    	btnTelaListar.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+			
+				carregaTelaListar();
+			}
+    });
+    }
+    //FIM
+    
+    //INICIO
+    public void carregaTelaCadastro(){
+    	setContentView(R.layout.tela_cadastro);
+    	
+    	btnCadastroSalvar = (Button) findViewById(R.cadastro.btnSalvar);
+    	btnCadastroCancelar = (Button) findViewById(R.cadastro.btnCancelar);
+    	
+    	
+    	
+    	btnCadastroSalvar.setOnClickListener(new OnClickListener() {
+			
+				public void onClick(View v) {
+				
+				
+				}
+        });
+    	
+    	btnCadastroCancelar.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+			
+				carregaTelaPrincipal();
+			}
+    });
+    }
+    //FIM
+    
+  //INICIO
+    public void carregaTelaListar(){
+    	setContentView(R.layout.tela_listar);
+    	numRegistros = (TextView) findViewById(R.listar.tvCount);
+    	numRegistros.setText("0");
+    	btnListarCancelar = (Button) findViewById(R.listar.btnCancelar);
+    	
+    	btnListarCancelar.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+			
+				carregaTelaPrincipal();
+			}
+    });
+    	
+    }
+    //FIM
+    
+    
+}

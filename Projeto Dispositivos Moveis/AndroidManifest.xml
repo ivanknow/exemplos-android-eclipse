@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.ufrpe.mobile.provamovel"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.ufrpe.mobile.provamovel.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.ufrpe.mobile.provamovel.ListarProvasActivity"
+            android:label="@string/title_activity_listar_provas" >
+        </activity>
+        <activity
+            android:name="br.ufrpe.mobile.provamovel.DetalheProvaActivity"
+            android:label="@string/title_activity_detalhe_prova" >
+        </activity>
+        <activity
+            android:name="br.ufrpe.mobile.provamovel.QuestaoAbertaActivity"
+            android:label="@string/title_activity_questao_aberta" >
+        </activity>
+        <activity
+            android:name="br.ufrpe.mobile.provamovel.QuestaoFechadaActivity"
+            android:label="@string/title_activity_questao_fechada" >
+        </activity>
+        <activity
+            android:name="br.ufrpe.mobile.provamovel.QuestaoActivity"
+            android:label="@string/title_activity_questao" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:text="Módulo de cadastro. Digite os dados abaixo" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="" android:id="@+id/retornoCadastroFoto" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="Nome:" android:id="@+id/labelnome" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/etnome" android:text=""></EditText>
+    <TextView android:text="Profissão:" android:id="@+id/labelProf" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/etprof" android:text=""></EditText>
+    <TextView android:text="Idade:" android:id="@+id/labelIdade" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:inputType="numberSigned" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/etidade" android:text=""></EditText>
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        
+        <Button android:id="@+id/inserirImagem" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Inserir imagem"></Button>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+        <Button android:text="Cadastrar Pessoa" android:id="@+id/btnCadastrar" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        <Button android:text="Cancelar" android:id="@+id/btnCancelarCadastro" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+
+</LinearLayout>

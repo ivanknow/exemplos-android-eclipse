@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <CheckBox android:text="@string/item_1" android:id="@+id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+    <CheckBox android:text="@string/item_2" android:id="@+id/checkBox2" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+    <CheckBox android:text="@string/item_3" android:id="@+id/checkBox3" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+    <CheckBox android:text="@string/item_4" android:id="@+id/checkBox4" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+    <Button android:text="@string/bt_total_compra" android:id="@+id/button1" android:layout_width="match_parent" android:layout_height="wrap_content"></Button>
+    <Button android:layout_width="match_parent" android:id="@+id/button2" android:layout_height="wrap_content" android:text="Add ao carrinho"></Button>
+    <TextView android:id="@+id/textView1" android:text="0.0" android:layout_width="match_parent" android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>

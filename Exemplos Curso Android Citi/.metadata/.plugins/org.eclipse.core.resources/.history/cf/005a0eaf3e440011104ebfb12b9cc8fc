@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:text="Lista de Pessoa cadastradas" android:id="@+id/labelTituloListar" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="número de registros:0" android:id="@+id/tvNumReg" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+        <TextView  android:textColor="#FFFF00" android:text="Nome:" android:id="@+id/tvNomeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        <TextView android:text="" android:id="@+id/tvNome" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout2" android:layout_height="wrap_content">
+        <TextView  android:textColor="#FFFF00" android:text="Profissão:" android:id="@+id/tvProfLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        <TextView android:text="" android:id="@+id/tvProf" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout3" android:layout_height="wrap_content">
+        <TextView android:textColor="#FFFF00" android:text="Idade:" android:id="@+id/tvIdadeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        <TextView android:text="" android:id="@+id/tvIdade" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:id="@+id/linearLayout4" android:layout_height="wrap_content">
+        <Button android:text="Voltar" android:id="@+id/btnVolta" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        <Button android:text="Avançar" android:id="@+id/btnAvanca" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+    <Button android:id="@+id/btnListarVoltarMain" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Menu Principal"></Button>
+</LinearLayout>

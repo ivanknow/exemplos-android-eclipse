@@ -1,0 +1,81 @@
+package br.ufrpe.mobile.provamovel.modelo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Prova {
+	
+	private int id;
+	private String titulo;
+	private String nomeProfessor;
+	private String nomeAluno;
+	private List<Questao> questoes;
+	
+	public Prova() {
+		
+		questoes = new ArrayList<Questao>();
+		
+	}
+	
+	public Prova(String titulo, String nomeProfessor, String nomeAluno) {
+		this();
+		
+		this.titulo = titulo;
+		this.nomeProfessor = nomeProfessor;
+		this.nomeAluno = nomeAluno;
+
+	}
+
+	public Prova(String titulo, String nomeProfessor, String nomeAluno,
+			List<Questao> questoes) {
+		super();
+		this.titulo = titulo;
+		this.nomeProfessor = nomeProfessor;
+		this.nomeAluno = nomeAluno;
+		this.questoes = questoes;
+	}
+	
+	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getNomeProfessor() {
+		return nomeProfessor;
+	}
+
+	public void setNomeProfessor(String nomeProfessor) {
+		this.nomeProfessor = nomeProfessor;
+	}
+
+	public String getNomeAluno() {
+		return nomeAluno;
+	}
+
+	public void setNomeAluno(String nomeAluno) {
+		this.nomeAluno = nomeAluno;
+	}
+
+	public List<Questao> getQuestoes() {
+		return questoes;
+	}
+
+	public void setQuestoes(List<Questao> questoes) {
+		this.questoes = questoes;
+	}
+
+
+}

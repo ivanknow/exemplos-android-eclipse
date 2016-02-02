@@ -1,0 +1,31 @@
+package br.ufrpe.mobile.provamovel.modelo;
+
+
+public class Alternativa {
+
+	private boolean marcada;
+	private String titulo;
+	public Alternativa() {
+	}
+	public Alternativa(boolean marcada, String titulo) {
+		super();
+		this.marcada = marcada;
+		this.titulo = titulo;
+	}
+	public boolean isMarcada() {
+		return marcada;
+	}
+	public void setMarcada(boolean marcada) {
+		this.marcada = marcada;
+	}
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	
+	
+	
+	
+}

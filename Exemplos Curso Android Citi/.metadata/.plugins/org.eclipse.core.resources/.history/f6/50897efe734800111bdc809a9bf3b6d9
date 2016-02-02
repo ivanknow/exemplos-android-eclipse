@@ -1,0 +1,126 @@
+package br.ufpe.cin.blog;
+
+import android.app.Activity;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ListView;
+
+public class AppBlog extends Activity {
+	
+	Button btnTelaPostar,btnTelaArquivo,
+	btnInserirPost,btnCancelarInserirPost
+	,btnListarPostCancelar;
+	
+	ListView listaPost;
+	
+	SQLiteDatabase banco;
+	Cursor dados;
+	
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        criaBanco();
+        carregaTelaPrincipal();
+    }
+    
+    public void carregaTelaPrincipal(){
+    	
+    	setContentView(R.layout.main);
+    	btnTelaPostar = (Button) findViewById(R.id.btnPostar);
+    	btnTelaArquivo = (Button) findViewById(R.id.btnArquivo);
+    	
+    	btnTelaPostar.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				carregaTelaInserirPost();
+			}
+        });
+    	
+    	btnTelaArquivo.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				carregaTelaListarPost();
+			}
+        });
+
+    	
+    }
+  
+ //tela de listar posts na list view   
+ public void carregaTelaListarPost(){
+    	
+    	setContentView(R.layout.listar_post);
+    	btnListarPostCancelar = (Button) findViewById(R.listarpost.cancelar);
+    	listaPost = (ListView) findViewById(R.listarpost.lista);
+    	btnListarPostCancelar.setOnClickListener(new OnClickListener() {
+    		
+    		public void onClick(View v) {
+    			carregaTelaPrincipal();
+    		}
+        });
+    	
+    }
+ 
+ //tela de inserir post   
+ public void carregaTelaInserirPost(){
+ 	
+ 	setContentView(R.layout.inserir_post);
+ 	
+ 	btnInserirPost = (Button) findViewById(R.post.btnPostInserir);
+ 	btnCancelarInserirPost = (Button) findViewById(R.post.btnPostCalcelInserir);
+ 	
+ 	btnCancelarInserirPost.setOnClickListener(new OnClickListener() {
+		
+		public void onClick(View v) {
+			carregaTelaPrincipal();
+		}
+    });
+	
+ 	btnInserirPost.setOnClickListener(new OnClickListener() {
+		
+		public void onClick(View v) {
+			
+		}
+    });
+ 	
+ 	
+ }
+ 
+ //ver post individual
+ public void carregaTelaVerPost(){
+ 	
+ 	setContentView(R.layout.ver_post);
+ }
+ 
+ //ver comenttários
+ public void carregaTelaVerComentarios(){
+ 	
+ 	setContentView(R.layout.comentario);
+ }
+ 
+ //Inserir Comentarios
+ public void carregaTelaInserirrComentarios(){
+	 	
+	 	setContentView(R.layout.inserir_comentario);
+	 }
+ 
+ //métodos de banco
+ 
+ public void criaBanco(){
+	 try{
+	        banco = getApplicationContext().openOrCreateDatabase("bancoCadastro",MODE_PRIVATE,null);
+	       // banco.execSQL("DROP TABLE tb_pessoa2");
+	        banco.execSQL("CREATE TABLE IF NOT EXISTS post (  id int(11) PRIMARY KEY,  titulo varchar(200) NOT NULL, texto text NOT NULL,  autor varchar(200) NOT NULL,  foto int(20) NOT NULL)");
+	        banco.execSQL("CREATE TABLE IF NOT EXISTS comentario (  post_id int(11) NOT NULL,  texto text NOT NULL,  autor varchar(200) NOT NULL)");
+		        carregaTelaPrincipal();
+	        }catch (Exception e){
+	        	e.printStackTrace();
+	        }
+	 
+ }
+}

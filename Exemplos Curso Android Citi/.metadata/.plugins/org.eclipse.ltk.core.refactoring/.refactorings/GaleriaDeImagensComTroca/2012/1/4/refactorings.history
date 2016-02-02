@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ImageAdapter.java&apos; to &apos;AplicacaoDeCadastroFazerFoto/src/br.ufpe.cin.ivan.modelo&apos;&#x0D;&#x0A;- Original project: &apos;GaleriaDeImagensComTroca&apos;&#x0D;&#x0A;- Destination element: &apos;AplicacaoDeCadastroFazerFoto/src/br.ufpe.cin.ivan.modelo&apos;&#x0D;&#x0A;- Original element: &apos;br.cin.ufpe.android.ImageAdapter.java&apos;" description="Copy compilation unit" destination="=AplicacaoDeCadastroFazerFoto/src&lt;br.ufpe.cin.ivan.modelo" element1="/src&lt;br.cin.ufpe.android{ImageAdapter.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1327185083942" units="1" version="1.0"/>
+</session>

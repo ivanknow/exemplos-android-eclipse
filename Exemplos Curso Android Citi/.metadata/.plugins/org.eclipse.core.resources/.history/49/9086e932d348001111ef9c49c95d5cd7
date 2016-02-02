@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="ver post"
+    />
+<TextView android:text="Titulo" android:id="@+verpost/tvTitulo" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<TextView android:text="Autor" android:id="@+verpost/tvAutor" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<TextView android:text="Texto" android:id="@+verpost/tvTexto" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<ImageView android:src="@drawable/icon" android:layout_width="wrap_content" android:id="@+id/imageView1" android:layout_height="wrap_content"></ImageView>
+<LinearLayout android:gravity="center" android:layout_width="match_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+    <Button android:text="Voltar" android:id="@+verpost/btnVerPostVoltar" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    <Button android:text="Comentários" android:id="@+verpost/btnVerPostComentarios" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    <Button android:text="Comentar" android:id="@+verpost/btnVerPostComentar" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+package br.ufrpe.mobile.provamovel.modelo;
+
+public class QuestaoFechada extends Questao{
+	
+	private Alternativa[] alternativas;
+
+	public QuestaoFechada(String enunciado, Prova prova) {
+		super(enunciado, prova);
+		
+		alternativas = new Alternativa[5];
+		
+	}
+
+	@Override
+	public TipoQuestao getTipo() {
+		
+		return TipoQuestao.Fechada;
+	}
+
+	public Alternativa[] getAlternativas() {
+		return alternativas;
+	}
+
+	public void setAlternativas(Alternativa[] alternativas) {
+		this.alternativas = alternativas;
+	}
+	
+	
+
+}

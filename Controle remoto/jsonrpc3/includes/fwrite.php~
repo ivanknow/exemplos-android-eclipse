@@ -1,0 +1,7 @@
+<?php
+$fp = fopen('data.txt', 'a');
+		fwrite($fp, "{op:'left'}");
+		fclose($fp);
+
+
+?>
